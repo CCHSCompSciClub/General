@@ -4,13 +4,13 @@ require("functions.php");
 ?>
 <html>
     <head>
-    
+        <link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
     </head>
     <body>
         <header>
-            <h0>
+            <h1>
                 Login
-            </h0>
+            </h1>
         </header>
         <form>
             <fieldset>
@@ -72,6 +72,7 @@ require("functions.php");
                 if(isset($_SESSION['authority']))
                 {
                     $response = "Rank ".$_SESSION['authority']." authorized.";
+                    echo "<button onclick=`window.location.href = 'main.php'` >Continue</button>";
                 }
                 else
                 {
@@ -84,6 +85,7 @@ require("functions.php");
             ?>
             </p>
         </form>
+        <script src="index.js"></script>
     </body>
 
 </html>
