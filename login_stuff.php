@@ -17,10 +17,15 @@ require("functions.php");
                 <label>
                     Email
                 </label>
-                <input type="
-                
-                
-                
+                <br/>
+                <input type="email" name="email" id="email" class="input" required placeholder="e.g. joesmith@gmail.com"/>
+                <br/>
+                <br/>
+                <label>
+                    Password
+                </label>
+                <br/>
+                <input type="password" name="" required/>
                 <input type="submit" id="submit" value="Login"/>
             </fieldset>
         </form>
