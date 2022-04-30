@@ -4,7 +4,7 @@ require("functions.php");
 ?>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="login_stuff.css" media="screen"/>
     </head>
     <body>
         <header>
@@ -85,7 +85,7 @@ require("functions.php");
             ?>
             </p>
         </form>
-        <script src="index.js"></script>
+        <script src="login_stuff.js"></script>
     </body>
 
 </html>
