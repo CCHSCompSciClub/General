@@ -7,6 +7,16 @@ require("functions.php");
         <link rel="stylesheet" type="text/css" href="login_stuff.css" media="screen"/>
     </head>
     <body>
+        
+        <?PHP
+        if(isset($_SESSION['authority']))
+        {
+            if($_SESSION['authority']>=2)
+            {
+                echo "<div onload='window.location.href = `main.php`'>If you see this, then the site is broken</div>";
+            }
+        }
+        ?>
         <header>
             <h1>
                 Login
@@ -28,6 +38,7 @@ require("functions.php");
                         <label>
                             Password
                         </label>
+                        <br/>
                         <input type="password" name="password" id="password" class="input" required placeholder="Enter Your Password Here"/>
                     </div>
                         <br/>
@@ -37,11 +48,13 @@ require("functions.php");
             </fieldset>
             <p id="phptext">
             <?PHP
-                if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) 
+                if(isset($_POST['email']))
                 {
-                  unset($_POST["email"]);
+                    if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) 
+                    {
+                      unset($_POST["email"]);
+                    }
                 }
-
                 if(isset($_POST['email']) && $_POST['password'])
                 {
                     $_SESSION['email'] = $_POST['email'];
@@ -67,6 +80,8 @@ require("functions.php");
                             break;
                         case "walkerj@clarke.k12.ga.us cyberlab":
                             $_SESSION['authority'] = 5;
+                        default:
+                            $_SESSION['authority'] = 1;
                     }
                 }
                 if(isset($_SESSION['authority']))
