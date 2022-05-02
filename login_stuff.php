@@ -22,7 +22,7 @@ require("functions.php");
                 Login
             </h1>
         </header>
-        <form>
+        <form method="post" action="">
             <fieldset>
                 <div class="formdiv">
                     <div id="emaildiv">
