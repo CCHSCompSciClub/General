@@ -1,10 +1,10 @@
 <?PHP
 session_start();
-require("functions.php");
+require("php/functions.php");
 ?>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="login_stuff.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="css/login_stuff.css" media="screen"/>
     </head>
     <body>
         
@@ -100,7 +100,7 @@ require("functions.php");
             ?>
             </p>
         </form>
-        <script src="login_stuff.js"></script>
+        <script src="js/login_stuff.js"></script>
     </body>
 
 </html>
