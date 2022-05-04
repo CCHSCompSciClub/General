@@ -1,11 +1,11 @@
 <?PHP
 session_start();
-require('functions.php');
+require('php/functions.php');
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" href="index.css" media="screen" type="test/css" />
+		<link rel="stylesheet" href="css/index.css" media="screen" type="test/css" />
 		<title>Page Title</title>
 	</head>
 	<body>
@@ -20,7 +20,7 @@ require('functions.php');
 		
 		<h1>This is a Heading</h1>
 		<p>This is a paragraph.</p>
-		<script src="index.js" ></script>
+		<script src="js/index.js" ></script>
 
 	</body>
 </html>
