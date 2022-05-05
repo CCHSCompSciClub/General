@@ -1,3 +1,4 @@
 Click the link below to download the file
 https://mega.nz/file/d80iwKaT#1Y2Pu3rofdBMI2BbbQ1zNBuarMzsZDv9Mta8v2uZn_c
 warning: very early version of game, may be buggy and run unoptimally. 
+Currently only works on windows devices
