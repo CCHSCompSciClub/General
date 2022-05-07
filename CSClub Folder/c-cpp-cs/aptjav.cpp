@@ -1,21 +1,25 @@
-#include <iostream>
-#include <cmath>
 #include <string>
-#include <vector>
+#include <iostream>
 #include <cstdlib>
 
 #define START {
 #define END }
-#define < (
-#define > )
-#define print cout
+#define OPEN (
+#define CLOSE )
+#define OUTCOME return
 #define command system
 
 using namespace std;
 
-int main OPEN CLOSE 
+int main OPEN CLOSE
 START
-  command < "sudo apt install default-jdk -y" > ;
+    
+    command OPEN "sudo apt update" CLOSE ;
 
+    command OPEN "sudo apt install default-jdk -y" CLOSE ;
+    command OPEN "sudo apt install default-jre -y" CLOSE ;
 
+    command OPEN "echo all done" CLOSE ;
+    
+OUTCOME 0;
 END
