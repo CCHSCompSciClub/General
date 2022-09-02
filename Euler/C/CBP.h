@@ -18,6 +18,7 @@
 #define ohex "%x\n"
 #define onull "%n\n"
 #define olonglong "%lld\n"
+#define osize "%zu\n"
 
 #define iint "%d"
 #define istr "%s"
@@ -31,6 +32,7 @@
 #define ihex "%x"
 #define inull "%n"
 #define ilonglong "%lld"
+#define isize "%zu"
 
 #define startMain int main(){
 #define endMain return 0;}
