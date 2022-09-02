@@ -11,24 +11,26 @@
 #define opos "%i\n"
 #define odbl "%d\n"
 #define oflt "%f\n"
-#define olong  "%l\n"
+#define olong  "%ld\n"
 #define ochar  "%c\n"
 #define optr "%p\n"
 #define ooct  "%o\n"
 #define ohex "%x\n"
 #define onull "%n\n"
+#define olonglong "%lld\n"
 
 #define iint "%d"
 #define istr "%s"
 #define ipos "%i"
 #define idbl "%d"
 #define iflt "%f"
-#define ilong  "%l"
+#define ilong  "%ld"
 #define ichar  "%c"
 #define iptr "%p"
 #define ioct  "%o"
 #define ihex "%x"
 #define inull "%n"
+#define ilonglong "%lld"
 
 #define startMain int main(){
 #define endMain return 0;}
